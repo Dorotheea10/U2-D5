@@ -1,148 +1,241 @@
-/* Aggiungi stile per la barra di navigazione */
-
+html,
 body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffc017; /* Colore di sfondo giallo */
-  padding: 20px 20px;
-  border-bottom: 1px solid #000; /* Linea nera sotto la barra di navigazione */
-  height: 35px;
+  height: 100vh;
+  color: #191919;
   font-family: "Roboto", sans-serif;
-}
-
-/* ... (Altri stili esistenti) ... */
-
-/* Navbar styles */
-
-/* ... (Altri stili) ... */
-
-/* Aggiungi stile per il logo, i link e il pulsante Get Started */
-.logo img {
-  width: 20;
-  margin-left: 100px;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  padding-right: 7rem;
-  font-size: 14px;
-}
-
-ul li {
-  margin-right: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-}
-
-ul a {
-  text-decoration: none;
-  color: black; /* Colore del testo per i link */
-}
-
-.get-started-button {
-  background-color: black;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-/* Aggiungi altri stili secondo necessità */
-/* ... (Altri stili esistenti) ... */
-
-/* Stili per la sezione hero */
-.hero-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffc017; /* Colore di sfondo grigio chiaro */
-  padding: 100px;
-  border-bottom: #000 1px solid;
-}
-
-/*.left-section {
-  flex-basis: 50%; /* Occupa il 50% dello spazio disponibile */
-
-.left-section {
-  flex-basis: 50%; /* Occupa il 50% dello spazio disponibile */
-  position: relative; /* Aggiunto il posizionamento relativo */
-  margin-top: -20px;
-}
-
-.right-section {
-  flex-basis: 50%; /* Occupa il 50% dello spazio disponibile */
 }
 
 h1 {
-  font-family: "Spectral", sans-serif; /* Usa il font Spectral per il titolo */
-  color: #000; /* Colore del testo */
-  margin-bottom: 20px;
-  font-size: 90px; /* Imposta la dimensione del font a 36px */
-  margin-right: 20px; /* Aggiunge un margine a destra per allinearla con il logo */
-  text-align: left;
-  margin-top: 0;
+  font-family: "Spectral", serif;
+  font-size: 7em;
+  font-weight: 100;
+  margin: 0;
 }
 
-p {
-  font-family: "Roboto", sans-serif; /* Usa il font Roboto per il testo del paragrafo */
-  color: #000;
-  font-size: 27px;
-  text-align: left;
-  font-weight: 300;
-  line-height: 1; /* Imposta un valore inferiore per ridurre lo spazio tra le righe */
-  margin-top: -10px;
+h1 + h2 {
+  margin-bottom: 2em;
 }
 
-.cta-button {
-  background-color: black;
-  color: white;
-  padding: 15px 60px;
-  border-radius: 25px;
-  cursor: pointer;
-  border: none; /* Rimuove il bordo del pulsante */
-  margin-top: 4rem;
-
-  position: absolute;
-
-  left: 0px; /* Sposta il pulsante a sinistra di 20 pixel (o l'ammontare desiderato) rispetto al suo contenitore relativo (.left-section) */
-}
-
-/* Add these styles to your existing CSS file */
-/* Add these styles to your existing CSS file */
-
-/* Styles for the card section */
-.card-section {
+.container {
   display: flex;
-  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  flex-direction: column;
+}
+
+header {
+  margin-bottom: 2em;
+  background-color: #ffc017;
+  border-bottom: solid 1px #191919;
+  height: 32em;
+}
+
+nav {
+  background-color: #ffc017;
+  display: flex;
   justify-content: space-around;
+  border-bottom: solid 1px #191919;
+  width: 100%;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding-left: 3em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 0 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #191919;
+}
+
+.round-link-1 {
+  background-color: #191919;
+  color: white;
+  border-radius: 25px;
+  padding: 8px 1em;
+}
+
+.round-link-2 {
+  background-color: #191919;
+  color: white;
+  border-radius: 25px;
+  padding: 0.5em 2em;
+  font-size: 1.5em;
+}
+
+.green-button {
+  background-color: #1a8917;
+}
+
+.hero {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
-  padding: 50px; /* Adjust padding as needed */
-  background-color: #e0e0e0; /* Background color for the card section */
+  background-color: #ffc017;
 }
 
-.card {
-  flex-basis: calc(25% - 10px); /* Set the width for three cards in a row with margin */
-  text-align: center;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin: 10px;
+.hero-text {
+  margin-right: 20.5em;
+  padding-top: 6em;
 }
 
-.card h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.hero-text h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-top: 0.5em;
+  margin-bottom: 2.5em;
 }
 
-.card h3 {
-  font-size: 18px;
-  color: #555;
+.trend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.wrap-trend-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  float: left;
+  width: 20%;
+}
+
+.wrap-trend-title img {
+  width: 26px;
+  height: 26px;
+}
+
+.wrap-trend-title p {
+  margin: 0;
+}
+
+.trend-list {
+  display: flex;
+  border: solid 1px white;
+  display: flex;
+}
+
+.article-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.article-author img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.trend-list .single-article p {
+  margin-bottom: 0px;
+}
+
+.single-article {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding-right: 1em;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+.main-wrap {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgb(230, 230, 230);
+  position: relative;
+  top: 0;
+}
+
+.main-section {
+  width: 60%;
+  margin: 0 auto;
+  margin-right: 5em;
+  padding-top: 5em;
+}
+
+.main-article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  height: 15em;
+  padding: 1em;
+  z-index: 1;
+}
+
+.main-article p {
+  margin: 0;
+}
+
+.main-article img:last-child {
+  width: 200px;
+  height: 134px;
+}
+
+.main-article .single-article {
+  padding: 0;
+  width: 100%;
+}
+
+.side-container {
+  position: sticky;
+  height: 100%;
+  top: 0;
+}
+
+aside {
+  width: 50%;
+  padding-top: 4em;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  margin-bottom: 1em;
+}
+
+aside p {
+  text-transform: uppercase;
+}
+
+.tags {
+  margin-bottom: 1em;
+}
+
+.tags,
+footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags a,
+footer a {
+  border: solid 1px gray;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 5px;
+  color: #191919;
+  opacity: 0.5;
+  padding: 8px 1em;
+}
+
+footer {
+  width: 50%;
+}
+
+footer a {
+  border: none;
 }
